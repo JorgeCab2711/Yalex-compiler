@@ -9,4 +9,3 @@ let digit = ['0'-'9']
 let digits = digit+
 let id = letter(letter|digit)*
 let number = digits(.digits)?('E'['+''-']?digits)?
-
