@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 pygments = "*"
+tabulate = "*"
+graphviz = "*"
 
 [dev-packages]
 

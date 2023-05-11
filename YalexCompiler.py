@@ -166,7 +166,7 @@ def clean_tokens(tokens:list):
 # slr-4.yal.txt
 
 file_number = input('Enter file number: ')
-yal = YAlexTokenizer(f'slr-{file_number}.yal.txt')
+yal = YAlexTokenizer(f"slr-{file_number}.yal.txt")
 yal.get_tokens()
 tokens = clean_tokens(yal.tokens)
 
@@ -179,17 +179,8 @@ while counter < len(tokens):
     print('NFA:')
     nfa.showNFA(nfa.result[0])
     new_nfa = nfa.to_dict()
-    graph = nfa.visualize_nfa()
-    graph.render()
+    
 
     next = input('press any key for next token: ')
     if next == '':
         counter += 1
-        
-    
-
-
-
-
-
-
